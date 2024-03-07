@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { HomeIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
+import { HomeIcon, CurrencyDollarIcon, PresentationChartLineIcon, BanknotesIcon} from '@heroicons/react/24/solid'
 
 type Props = {}
 
@@ -21,6 +21,14 @@ const Sidebar = (props: Props) => {
                     <Link to="income-statement" className="flex md:min-w-full text-blueGray-500 text-medium uppercase font-bold block pt--1 pb-4 no-underline">
                         <CurrencyDollarIcon className="h-6 w-6 text-white-500 text-center" />
                         <h6 className='ml-3'>Estado de resultados</h6>
+                    </Link>
+                    <Link to="balance-sheet" className="flex md:min-w-full text-blueGray-500 text-medium uppercase font-bold block pt--1 pb-4 no-underline">
+                        <BanknotesIcon className="h-9 w-9 text-white-500 text-center" />
+                        <h6 className='ml-3'>Estado de Situación Financiera</h6>
+                    </Link>
+                    <Link to="cashflow-statement" className="flex md:min-w-full text-blueGray-500 text-medium uppercase font-bold block pt--1 pb-4 no-underline">
+                        <PresentationChartLineIcon className="h-9 w-9 text-white-500 text-center" />
+                        <h6 className='ml-3'>Estado de Flujos de Efectivo</h6>
                     </Link>
                 </div>
             </div>
